@@ -14,11 +14,11 @@ const customer = {
         this.discount = value;
     },
     getOrders() {
-      return customer.this.orders;
+      return this.orders;
     },
     addOrder(cost, order) {
-      balance -= cost - cost * discount;
-      this.orders.push(cost);
+      this.balance -= cost - cost * this.discount;
+      this.orders.push(order);
     },
     // Change code above this line
   };
